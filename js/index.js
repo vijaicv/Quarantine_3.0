@@ -1,13 +1,3 @@
-
-
-window.onload=loadpage();
-
-
-function loadpage(){particlesJS.load('particles-js', 'js/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-
-
 var container=document.getElementById("container");
 
 
@@ -63,4 +53,3 @@ var home =document.getElementById("homebtn");
 home.addEventListener("click",function(){
   location.reload();
 })
-}
