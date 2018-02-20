@@ -1,0 +1,53 @@
+body{
+  background: #000;
+}
+
+#particles-js{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width:100%;
+  height: 99%;
+}
+
+#container{
+  width: 100vw;
+  height: 99vh;
+  position: absolute;
+  z-index: 1005;
+  text-align: center;
+}
+
+table{
+  margin:0 auto;
+  margin-top: 40vh;
+}
+table:hover .textanimate{
+  cursor: pointer;
+  color:#00ffd1;
+  transition: color 1s;
+}
+
+hr{
+  background-color: #00ffd1;
+  width:40%;
+  height: 3px;
+  border:none;
+}
+
+#date{
+  color:white;
+  font-family: Chango;
+}
+
+
+
+.textanimate{
+  color: #fff;
+  font-family: Chango;
+  font-size: 80px;
+}
+.textanimate:focus{
+  outline: none;
+}
