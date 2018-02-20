@@ -27,25 +27,41 @@ maintitle.addEventListener("click",function(){
   }
 });
 
-var rules=document.getElementById("rules");
+var text=document.getElementById("exptext");
 
 rules.addEventListener("click",function(){
   console.log("called rules");
   TweenMax.to("#exptext",2,{y:-1000,opacity:0});
   TweenMax.from("#rulebox",0.5,{y:500,delay:0.5});
-  TweenMax.to("#rulebox",0.5,{opacity:1,delay:0.5});
-  TweenMax.from("#contact",2,{y:-20,ease:Bounce.easeOut,delay:1,repeat:-1,yoyo:true});
-  TweenMax.to("#contact",2,{color:"#00ffd1",delay:2,repeat:-1,yoyo:true});
+  TweenMax.to("#rulebox",0.5,{opacity:1,delay:0.5,onComplete:destroy2});
+  TweenMax.from("#where",2,{y:-20,ease:Bounce.easeOut,delay:2,repeat:-1,yoyo:true});
+  TweenMax.to("#where",2,{color:"#00ffd1",delay:2,repeat:-1,yoyo:true});
 
+  function destroy2(){
+    text.classList.add("destroy");
+  }
 })
 
 
+var rulebox=document.getElementById("rulebox");
+where.addEventListener("click",function(){
+  TweenMax.to("#rulebox",2,{y:-1000,opacity:0});
+  TweenMax.from("#wwh",0.5,{y:500});
+  TweenMax.to("#wwh",0.5,{opacity:1,onComplete:destroy3});
+  TweenMax.from("#contact",2,{y:-20,ease:Bounce.easeOut,delay:1,repeat:-1,yoyo:true});
+  TweenMax.to("#contact",2,{color:"#00ffd1",delay:2,repeat:-1,yoyo:true});
+
+  function destroy3(){
+    rulebox.classList.add("destroy");
+  }
+})
+
 var contact=document.getElementById("contact");
 contact.addEventListener("click",function(){
-  TweenMax.to("#rulebox",2,{y:-1000,opacity:0});
+  TweenMax.to("#wwh",2,{y:-1000,opacity:0});
   TweenMax.from("#contactus",0.5,{y:500});
   TweenMax.to("#contactus",0.5,{opacity:1});
-  TweenMax.from("#homebtn",2,{y:-20,ease:Bounce.easeOut,delay:1,repeat:-1,yoyo:true});
+  TweenMax.from("#homebtn",2,{y:-20,ease:Bounce.easeOut,delay:2,repeat:-1,yoyo:true});
   TweenMax.to("#homebtn",2,{color:"#00ffd1",delay:2,repeat:-1,yoyo:true});
 })
 

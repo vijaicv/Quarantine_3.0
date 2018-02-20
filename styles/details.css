@@ -58,7 +58,7 @@ body{
   width: 100%;
   text-align: center;
   position: absolute;
-  z-index: 800;
+  z-index: 700;
   margin-top: 30vh;
   opacity: 0;
   color:white;
@@ -71,4 +71,26 @@ body{
 
 #homebtn:hover{
    cursor: pointer;
+}
+
+#wwh{
+  color:white;
+  position: absolute;
+  opacity: 0;
+  z-index: 800;
+  width: 100vw;
+  text-align: center;
+  margin-top: 30vh;
+  font-family: Share;
+  font-size: 30px;
+}
+
+#where{
+  width: 100%;
+  text-align: center;
+  font-family: Share;
+  font-size: 50px;
+}
+#where:hover{
+  cursor: pointer;
 }
