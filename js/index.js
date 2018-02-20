@@ -19,7 +19,7 @@ maintitle.addEventListener("click",function(){
   TweenMax.to(".bouncy",1,{opacity:1,delay:1,onComplete:destroy});
 
 
-  TweenMax.from(".bouncy",2,{y:-20,ease:Bounce.easeOut,delay:1,repeat:-1,yoyo:true});
+  TweenMax.from(".bouncy",2,{y:-20,ease:Bounce.easeOut,delay:2,repeat:-1,yoyo:true});
   TweenMax.to(".bouncy",2,{color:"#00ffd1",delay:2,repeat:-1,yoyo:true});
 
   function destroy(){
@@ -48,7 +48,7 @@ where.addEventListener("click",function(){
   TweenMax.to("#rulebox",2,{y:-1000,opacity:0});
   TweenMax.from("#wwh",0.5,{y:500});
   TweenMax.to("#wwh",0.5,{opacity:1,onComplete:destroy3});
-  TweenMax.from("#contact",2,{y:-20,ease:Bounce.easeOut,delay:1,repeat:-1,yoyo:true});
+  TweenMax.from("#contact",2,{y:-20,ease:Bounce.easeOut,delay:2,repeat:-1,yoyo:true});
   TweenMax.to("#contact",2,{color:"#00ffd1",delay:2,repeat:-1,yoyo:true});
 
   function destroy3(){
